@@ -22,12 +22,57 @@
 
     <include layout="@layout/content_main" />
 
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/garrafa"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content" />
+
+
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_invite"
+        android:id="@+id/fab_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/back"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/close"
+        app:layout_anchor="@id/fab_back"
+        app:layout_anchorGravity="top" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/plus"
+        app:layout_anchor="@id/fab_close"
+        app:layout_anchorGravity="top" />
+
 
 </android.support.design.widget.CoordinatorLayout>

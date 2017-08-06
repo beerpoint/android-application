@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071030"
+    android:clickable="false"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    tools:context="com.ambev.beerpoint.SplashScreenActivity">
+
+</RelativeLayout>
